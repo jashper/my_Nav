@@ -4,189 +4,193 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dlub-menu</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
     <link rel="stylesheet" href="./reset/reset.css">
     <link rel="stylesheet" href="./nav-bar-4.css">
-    <title>Dlub-menu</title>
 </head>
 <body>
 
     <input type="checkbox" id="trigger">
-    <header class="header leftSideBox">
-        <div class="container">
-            <div class="logo" for="trigger">
-                <a href="#">
-                    <h1>
-                        <picture>
-                            <source media="(min-width: 768px)" srcset="./img/logo.svg">
-                            <img src="./img/logo-mobile.png" alt="">
-                        </picture>
-                    </h1>
-                </a>
-            </div>
-            <div class="hb-menu">
-                <label class="hb hb_click" for="trigger">
-                </label>
-            </div>
-            <label class="gradient-bg" for="trigger"></label>
-            <nav class="main_nav">
-                <div class="wrapper bg">
-                    <div class="hb-menu">
-                        <label class="hb" for="trigger">
-                            <span class="sr-only"></span>
-                            <span class="sr-only"></span>
-                            <span class="sr-only"></span>
-                        </label>
-                        <label class="hb-1">
-                            <span class="sr-only"></span>
-                            <span class="sr-only"></span>
-                            <span class="sr-only"></span>
-                        </label>
-                    </div>
-                    <ul class="main-menu">
-                        <li class="less">
-                            <a href="#">關於德寶</a>
-                        </li>
-                        <li class="less">
-                            <a href="#">最新消息</a>
-                        </li>
-                        <li class="more">
-                            <a href="#">產品介紹</a>
-                            <ul class="child-menu">
-                                <li><a href="#">防水塗料</a>
-                                </li>
-                                <li><a href="#">清水摸塗料</a>
-                                </li>
-                                <li><a href="#">抗菌/防霧/消毒</a>
-                                </li>
-                                <li><a href="#">瓷磚防滑劑</a>
-                                </li>
-                                <li><a href="#">防護漆</a>
-                                </li>
-                                <li><a href="#">傢俱地板水性漆</a>
-                                </li>
-                                <li><a href="#">水性環保塗料</a>
-                                </li>
-                                <li><a href="#">無色無膜塗料</a>
-                                </li>
-                                <li><a href="#">遠紅外線塗料</a>
-                                </li>
-                                <li><a href="#">室內防火塗料</a>
-                                </li>
-                                <li><a href="#">戶外護木漆</a>
-                                </li>
-                                <li><a href="#">NC無苯木器塗料</a>
-                                </li>
-                                <li><a href="#">建築石材/金油</a>
-                                </li>
-                                <li><a href="#">特殊效果塗料</a>
-                                </li>
-                                <li><a href="#">稀釋劑</a>
-                                </li>
-                                <li><a href="#">著色劑</a>
-                                </li>
-                                <li><a href="#">除水垢噴霧</a>
-                                </li>
-                                <li><a href="#">皮革保養乳</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="more">
-                            <a href="#">塗料大小事</a>
-                            <ul class="child-menu">
-                                <li><a href="#">塗料教學示範</a>
-                                </li>
-                                <li><a href="#">媒體報導</a>
-                                </li>
-                                <li><a href="#">木漆學堂</a>
-                                </li>
-                                <li><a href="#">案場介紹</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="less">
-                            <a href="#">進擊的木頭人</a>
-                        </li>
-                        <li class="more">
-                            <a href="#">塗料教學</a>
-                            <ul class="child-menu">
-                                <li><a href="#">DIY施作與活動(影音)</a>
-                                </li>
-                                <li><a href="#">講座活動(相簿)</a>
-                                </li>
-                                <li><a href="#">案場分享(相簿)</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="more">
-                            <a href="#">塗裝問與答</a>
-                            <ul class="child-menu">
-                                <li><a href="#">問與答</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="more">
-                            <a href="#">支援下載</a>
-                            <ul class="child-menu">
-                                <li><a href="#">產品型錄</a>
-                                </li>
-                                <li><a href="#">技術資料</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="more">
-                            <a href="#">去哪裏買</a>
-                            <ul class="child-menu">
-                                <li><a href="#">全省各大漆行</a>
-                                </li>
-                                <li><a href="#">PCHOME</a>
-                                </li>
-                                <li><a href="#">家米亞</a>
-                                </li>
-                                <li><a href="#">特力屋</a>
-                                </li>
-                                <li><a href="#">職人的店</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="less">
-                            <a href="#">塗裝安全施工注意事項</a>
-                        </li>
-                    </ul>
-                    <footer class="contact">
-                        <div class="contact_box">
-                            <span class="icon call"></span>
-                            <span class="icon mail"></span>
-                            <a class="phone" href="#">CONTACT</a>
-                        </div>
-                    </footer>
-    
-                    <div class="side_menu">
-                        <div class="language_box">
-                            <span class="icon globe"></span>
-                            <select name="" id="translation">
-                                <option value="">請選擇語言</option>
-                                <option value="">English</option>
-                            </select>
-                        </div>
-                        <div class="search">
-                            <a href="#" class="search_bar">
-                                <span class="icon glass"></span>
-                            </a>
-    
-                        </div>
-                    </div>
+
+    <div class="container_fluid leftSideBox">
+        <header class="header">
+            <div class="container">
+                <div class="logo" for="trigger">
+                    <a href="#">
+                        <h1>
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="./img/logo.svg">
+                                <img src="./img/logo-mobile.png" alt="">
+                            </picture>
+                        </h1>
+                    </a>
                 </div>
-            </nav>
-        </div>
-    </header>
-    
-    <div class="section section1 event">first</div>
+                <div class="hb-menu">
+                    <label class="hb hb_click" for="trigger">
+                    </label>
+                </div>
+                <label class="gradient-bg" for="trigger"></label>
+                <nav class="main_nav">
+                    <div class="wrapper bg">
+                        <div class="hb-menu">
+                            <label class="hb" for="trigger">
+                                <span class="sr-only"></span>
+                                <span class="sr-only"></span>
+                                <span class="sr-only"></span>
+                            </label>
+                            <label class="hb-1">
+                                <span class="sr-only"></span>
+                                <span class="sr-only"></span>
+                                <span class="sr-only"></span>
+                            </label>
+                        </div>
+                        <ul class="main-menu">
+                            <li class="less">
+                                <a href="#">關於德寶</a>
+                            </li>
+                            <li class="less">
+                                <a href="#">最新消息</a>
+                            </li>
+                            <li class="more">
+                                <a href="#">產品介紹</a>
+                                <ul class="child-menu">
+                                    <li><a href="#">防水塗料</a>
+                                    </li>
+                                    <li><a href="#">清水摸塗料</a>
+                                    </li>
+                                    <li><a href="#">抗菌/防霧/消毒</a>
+                                    </li>
+                                    <li><a href="#">瓷磚防滑劑</a>
+                                    </li>
+                                    <li><a href="#">防護漆</a>
+                                    </li>
+                                    <li><a href="#">傢俱地板水性漆</a>
+                                    </li>
+                                    <li><a href="#">水性環保塗料</a>
+                                    </li>
+                                    <li><a href="#">無色無膜塗料</a>
+                                    </li>
+                                    <li><a href="#">遠紅外線塗料</a>
+                                    </li>
+                                    <li><a href="#">室內防火塗料</a>
+                                    </li>
+                                    <li><a href="#">戶外護木漆</a>
+                                    </li>
+                                    <li><a href="#">NC無苯木器塗料</a>
+                                    </li>
+                                    <li><a href="#">建築石材/金油</a>
+                                    </li>
+                                    <li><a href="#">特殊效果塗料</a>
+                                    </li>
+                                    <li><a href="#">稀釋劑</a>
+                                    </li>
+                                    <li><a href="#">著色劑</a>
+                                    </li>
+                                    <li><a href="#">除水垢噴霧</a>
+                                    </li>
+                                    <li><a href="#">皮革保養乳</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="more">
+                                <a href="#">塗料大小事</a>
+                                <ul class="child-menu">
+                                    <li><a href="#">塗料教學示範</a>
+                                    </li>
+                                    <li><a href="#">媒體報導</a>
+                                    </li>
+                                    <li><a href="#">木漆學堂</a>
+                                    </li>
+                                    <li><a href="#">案場介紹</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="less">
+                                <a href="#">進擊的木頭人</a>
+                            </li>
+                            <li class="more">
+                                <a href="#">塗料教學</a>
+                                <ul class="child-menu">
+                                    <li><a href="#">DIY施作與活動(影音)</a>
+                                    </li>
+                                    <li><a href="#">講座活動(相簿)</a>
+                                    </li>
+                                    <li><a href="#">案場分享(相簿)</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="more">
+                                <a href="#">塗裝問與答</a>
+                                <ul class="child-menu">
+                                    <li><a href="#">問與答</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="more">
+                                <a href="#">支援下載</a>
+                                <ul class="child-menu">
+                                    <li><a href="#">產品型錄</a>
+                                    </li>
+                                    <li><a href="#">技術資料</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="more">
+                                <a href="#">去哪裏買</a>
+                                <ul class="child-menu">
+                                    <li><a href="#">全省各大漆行</a>
+                                    </li>
+                                    <li><a href="#">PCHOME</a>
+                                    </li>
+                                    <li><a href="#">家米亞</a>
+                                    </li>
+                                    <li><a href="#">特力屋</a>
+                                    </li>
+                                    <li><a href="#">職人的店</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="less">
+                                <a href="#">塗裝安全施工注意事項</a>
+                            </li>
+                        </ul>
+                        <footer class="contact">
+                            <div class="contact_box">
+                                <span class="icon call"></span>
+                                <span class="icon mail"></span>
+                                <a class="phone" href="#">CONTACT</a>
+                            </div>
+                        </footer>
+        
+                        <div class="side_menu">
+                            <div class="language_box">
+                                <span class="icon globe"></span>
+                                <select name="" id="translation">
+                                    <option value="">請選擇語言</option>
+                                    <option value="">English</option>
+                                </select>
+                            </div>
+                            <div class="search">
+                                <a href="#" class="search_bar">
+                                    <span class="icon glass"></span>
+                                </a>
+        
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <div class="section section1 event">xxxfirstxxx</div>
     <div class="section section2 event"></div>
     <div class="section section3 event"></div>
     <div class="section section4 event"></div>
     <div class="section section5 event"></div>
-    <div class="section section6 event">last</div>
-
+    <div class="section section6 event">xxxlastxxx</div>
+    
     <div class="side_box">
         <p></p>
         <p></p>
@@ -198,7 +202,6 @@
     </div>
 
 
-    <script src="/jquery.js"></script>
     <script src="./left-menu.js"></script>
     <script>
 
@@ -279,7 +282,7 @@
     }
 
     </script>
-    <script>
+    <!-- <script>
 
     // detect scroll position
 
@@ -302,9 +305,9 @@
             //     setThis.css("top","0%");
             // }
 
-            });
+            // });
 
-    </script>
+    </script> -->
 
     <script>
         let a = $(window).height();
@@ -317,14 +320,14 @@
             $(".side_box p:nth-child(3)").text(scroll_count);
         });
 
-        let sec8 = $(".section3").offset().top;
-        let sec9 = $(".section4").offset().top;
-        let sec10 = $(".section5").offset().top;
-        let sec11 = $(".section6").offset().top;
-        $(".side_box p:nth-child(4)").html("section8-offset.top: " + sec4);
-        $(".side_box p:nth-child(5)").html("section9-offset.top: " + sec5);
-        $(".side_box p:nth-child(6)").html("section10-offset.top: " + sec6);
-        $(".side_box p:nth-child(7)").html("section11-offset.top: " + sec7);
+        let sec3 = $(".section3").offset().top;
+        let sec4 = $(".section4").offset().top;
+        let sec5 = $(".section5").offset().top;
+        let sec6 = $(".section6").offset().top;
+        $(".side_box p:nth-child(3)").html("section8-offset.top: " + sec3);
+        $(".side_box p:nth-child(4)").html("section9-offset.top: " + sec4);
+        $(".side_box p:nth-child(5)").html("section10-offset.top: " + sec5);
+        $(".side_box p:nth-child(6)").html("section11-offset.top: " + sec6);
 
     </script>
     

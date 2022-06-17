@@ -14,6 +14,10 @@
     font-family: "微軟正黑體", Arial,"Microsoft YaHei";
   }
 
+  /* html, body {
+    overflow: hidden;
+  } */
+
   body {
     font-family: 微軟正黑體 ;
   }
@@ -265,14 +269,14 @@ a {
         transition: transform .2s .2s ease-in;
     }
 
-    #trigger:checked ~ .header .container {
+    #trigger:checked ~ .container_fluid .header .container {
         transform: translateY(-70px);
         box-shadow: 0 0 0 0;
         transition: transform .1s ease-in;
     }
 
     
-    #trigger:checked ~ .header .gradient-bg {
+    #trigger:checked ~ .container_fluid .header .gradient-bg {
         display: block;
         top: 70px;
         left: 0;
@@ -282,7 +286,7 @@ a {
         background-color: rgba(0, 0, 0, .6);
     }
 
-    #trigger:checked ~ .header .main_nav {
+    #trigger:checked ~ .container_fluid .header .main_nav {
         transform: translateX(0px);
         transition: all .18s .05s;
     }
@@ -632,10 +636,23 @@ a {
     }
 
 }
-
+body {
+    /* position: relative; */
+    width: 100%;
+}
+.container_fluid {
+    width: 240px;
+    height: 1000px;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #095EA7;
+    position: absolute;
+    /* overflow: hidden; */
+}
 .header {
     top: 0;
     left: 0;
-    bottom: 0;
-    position: absolute;
+    position:relative;
+    height:100%;
 }

@@ -75,7 +75,7 @@ function moveSideMenuSetting(menuMoveRange){
 	if ( menuHeight >= wH ){
 		menuMoveRange = menuHeight - wH;
 	} else {
-		let menuMoveRange = 0;
+		let menuMoveRange = 100;
 	}
 	return menuMoveRange;
 }

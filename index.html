@@ -204,6 +204,27 @@
 
     <script src="./left-menu.js"></script>
     <script>
+        (function($) {
+
+// Smooth scroll to the anchor
+$("nav a").bind('click', function(event) {
+
+        var $this = $(this),
+    id = $this.attr("href"),
+    $section = $(id);
+        
+        event.preventDefault();
+    $("html, body").stop().animate({
+        scrollTop: $section.offset().top
+     }, 1500, 'easeInOutExpo');
+        
+    $("html, body").on("scroll wheel DOMMouseScroll mousewheel keyup touchmove", function(){
+    $("html, body").stop()});
+});
+
+})(jQuery);
+    </script>
+    <script>
 
   
 

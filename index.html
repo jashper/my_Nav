@@ -207,7 +207,7 @@
         (function($) {
 
 // Smooth scroll to the anchor
-$("nav a").bind('click', function(event) {
+$(".container_fluid").bind('scroll', function(event) {
 
         var $this = $(this),
     id = $this.attr("href"),

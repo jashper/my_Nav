@@ -1,0 +1,194 @@
+#trigger, #trigger-2 {
+    display: none;
+}
+
+.header .logo img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
+
+.logo {
+    width: 200px;
+    height: 50px;
+    background-color: blue;
+}
+
+.scene {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background-color: #aaa;
+}
+
+/* navigation */
+.main_nav {
+    width: 200px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transform: translateX(-200px);
+    margin: auto;
+    position: absolute;
+    background-color: red;
+    transition: all .23s;
+    /* transition:left .23s ease-out, transform .23s ease-out, width .24s ease-out; */
+}
+
+.main_nav .bg {
+    width: 200px;
+    height: 100vh;
+    background-color: #fa0;
+}
+
+.main_nav a {
+    display: block;
+    color: #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+}
+
+.main_nav li {
+    position: relative;
+}
+
+.main_nav li > ul {
+    display: none;
+    top: 0;
+    margin: auto;
+    left: 100%;
+    position: absolute;
+    width: 200px;
+}
+
+.main_nav li >.child-menu {
+    top: -30vh;
+}
+
+.main_nav li:hover > a{
+    color: #fa0;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.main_nav li:hover > ul {
+    display: block;
+}
+
+/* hamburger trigger */
+#trigger:checked ~ .header .main_nav {
+    transform: translateX(0px);
+    /* transition: left .24s ease-in; */
+}
+
+#trigger:checked ~ .header > .scene {
+    transform: translateY(-50px);
+}
+
+/* #trigger-2:checked ~ .header .main_nav {
+    left: -200px;
+    transition: left .24s ease-in;
+} */
+
+/* hamburger */
+.wrapper {
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+}
+
+.hb {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    background-color: #000;
+}
+
+.hb .sr-only {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80%;
+    height: 2px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: 1s;
+    border-radius: 25px;
+}
+
+.hb .sr-only:nth-child(1) {
+    top:8px;
+    transform: rotate(0deg);
+    transition: top 0s , opacity 1s;
+}
+
+.hb .sr-only:nth-child(2) {
+    top:0;
+    bottom: 0;
+    transition: width .4s;
+}
+
+.hb .sr-only:nth-child(3) {
+    bottom: 8px;  
+    transform: rotate(0deg);
+    opacity: 1;
+    transition: bottom 0s, opacity 1s; 
+       
+}
+
+#trigger:checked ~ .header .hb .sr-only:nth-child(1) {
+    top: 24px;
+    opacity: 0;
+    transition: top .4s, opacity .7s .2s;
+}
+
+#trigger:checked ~ .header .hb .sr-only:nth-child(2) {
+    width: 40%;
+    height: 3px;
+    transition: width .5s .5s, height .5s .25s ;
+}
+
+#trigger:checked ~ .header .hb .sr-only:nth-child(3) {
+    bottom: 24px;
+    opacity: 0;  
+    transition: bottom .4s, opacity .7s .2s;
+}
+
+
+/* #trigger-2:checked ~ .header .main_nav .hb-3 .sr-only-3:nth-child(1) {
+    top: 24px;
+    transition: top 1s;
+}
+
+#trigger-2:checked ~ .header .main_nav .hb-3 .sr-only-3:nth-child(2) {
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+#trigger-2:checked ~ .header .main_nav .hb-3 .sr-only-3:nth-child(3) {
+    bottom: 24px;
+    transition: bottom 1s;
+} */
+
+
+/* overwrite */
+.mobile-in {
+    left: -150px;
+    /* transition: transform .3s ease-in; */
+}
+
+.mobile-push {
+    width: 400px;
+    /* transition: width .3s .1s ease-in; */
+}
+
+
+@media screen and (max-width: 767px) {
+    
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/reset/reset.css">
+    <link rel="stylesheet" href="./nav-bar-3.css">
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" id="trigger">
+    <div class="header">
+        <div class="scene">
+            <label class="logo" for="trigger">
+                <a href="#">
+                    <h1>
+                        <img src="https://picsum.photos/300/75/?random=8">
+                    </h1>
+                </a>
+            </label>
+            <div class="wrapper">
+                <label class="hb" for="trigger">
+                    <span class="sr-only"></span>
+                    <span class="sr-only"></span>
+                    <span class="sr-only"></span>
+                </label>
+            </div>
+        </div>
+        <nav class="main_nav">
+            <div class="container bg">                
+                <div class="wrapper">
+                    <label class="hb" for="trigger">
+                        <span class="sr-only"></span>
+                        <span class="sr-only"></span>
+                        <span class="sr-only"></span>
+                    </label>
+
+                    <label class="hb-1">
+                        <span class="sr-only"></span>
+                        <span class="sr-only"></span>
+                        <span class="sr-only"></span>
+                    </label>
+                </div>
+                <ul class="main-menu">
+                    <li class="more">
+                        <a href="#">1</a>
+                            <ul class="child-menu">
+                                <li><a href="#">1.1</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">1.1.1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">1.1.2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">1.1.3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">1.2</a>
+                                </li>
+                                <li><a href="#">1.3</a>
+                                </li>
+                                <li><a href="#">1.4</a>
+                                </li>
+                                <li><a href="#">1.5</a>
+                                </li>
+                                <li><a href="#">1.6</a>
+                                </li>
+                                <li><a href="#">1.7</a>
+                                </li>
+                                <li><a href="#">1.8</a>
+                                </li>
+                                <li><a href="#">1.9</a>
+                                </li>
+                                <li><a href="#">2.0</a>
+                                </li>
+                                <li><a href="#">2.1</a>
+                                </li>
+                            </ul>
+                    </li>
+                    <li class="more">
+                        <a href="#">2</a>
+                        <ul class="child-menu">
+                            <li><a target="_blank" href="https//www.google.tw">1.1</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">1.1.1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">1.1.2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">1.1.3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="http://www.dlub.com.tw/news.php?NCate=8&ver=news">1.2</a>
+                            </li>
+                            <li><a href="#">1.3</a>
+                            </li>
+                            <li><a href="#">1.4</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="less">
+                        <a href="#">3</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <label for="trigger" class="bg-2"></label>   
+    </div>
+
+    <script src="/jquery.js"></script>
+    <script>
+        // works fine
+        $(".hb-1").on('click', function(){
+            $(".main_nav .wrapper .hb-1").removeClass("sub-active").css("display", "none");
+            $(".main_nav .wrapper .hb").css("display", "block");
+            $(".main_nav").removeClass("mobile-push mobile-in");
+            $(".main_nav li").children("ul").hide(); 
+        });
+
+         // works fine
+         $(".more").on("click", function(){
+            $(".main_nav").addClass("mobile-in");
+            $(".main_nav .wrapper .hb-1").addClass("sub-active").css("display", "block");
+            $(".main_nav .wrapper .hb").css("display", "none");
+        });
+
+        $("li.more").on('click', function(){
+            $(".main_nav").addClass("mobile-push");
+            // $(".main_nav .more > ul").css("display", "block");
+            // $(".more").next().children().show();
+            
+            // $(".child-menu").show();           
+        });
+
+
+    $(".main-menu .more > a").on('click', function(e){
+        $(".main_nav .more ul").hide();  
+        $(e.target).next("ul").show();    
+    });
+
+    $(".main-menu .less > a").on('click', function(){
+        $(".main_nav .more ul").hide(); 
+        $(".main_nav").removeClass("mobile-push mobile-in");
+        $(".main_nav .wrapper .hb-1").removeClass("sub-active").css("display", "none");
+        $(".main_nav .wrapper .hb").css("display", "block");      
+    });
+
+
+
+
+
+
+
+        // $(".more").siblings().children().show();
+    
+    
+        //     $(".main_nav .hb").on('click', function(e){
+    //      const $self = $(e.target);
+    //      let oppo =$self.attr("for", "trigger");
+    // });
+
+        // $('.main_nav .hb').on("click", function() {
+
+        //     if ($(".main_nav .hb")).hasClass("sub.active", false)
+        //     $(".main_nav .hb").attr("for","trigger", "trigger");
+    
+        // });
+
+        // $(".main_nav .wrapper .hb").removeClass("sub-active");
+
+
+
+        // others
+        // 寫法1
+        // $(".hb-1").on('click', function(){
+        //     $(".main_nav li").children("ul").hide();
+        // });
+
+        // $(".main_nav li").on('click', function(e){
+        //     $(e.target).parent().children("ul").show();
+        //     $(".main_nav li").children("ul").hide();
+        // });
+
+        
+        // 寫法2
+        // $(".hb-1").on('click', function(){
+        //     $('.child-menu-active').removeClass('child-menu-active');
+        // });
+
+        // $(".main_nav li").on('click', function(e){
+        //     $('.child-menu-active').removeClass('child-menu-active');
+        //     $(e.target).parent().children("ul").addClass('child-menu-active');            
+        // });
+
+
+
+    </script>
+    
+</body>
+</html>
